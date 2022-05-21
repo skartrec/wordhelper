@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+        <h1>Wordhelper</h1>
+        <br>
+        <figure class="text-center">
+            <blockquote class="blockquote">
+              <p>Search for words, any word you like. (not penis).</p>
+            </blockquote>
+            <a href="{{url_for('index')}}"button type="button" class="btn-primary">Search again</button>
+        <br>
+        </figure>
+            {% for items in new_words %}
+            <h1>
+            <li>{{items}}</li>
+            </h1>
+            {% endfor %}
+
+        </div>
+{% endblock %}
