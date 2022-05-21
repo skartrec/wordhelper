@@ -1,8 +1,6 @@
 from flask import Flask
 import re
 
-
-
 # complete_words = [x for x in words if len(x) <= 6]
 words = []
 new_words = []
