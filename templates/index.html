@@ -10,10 +10,11 @@
             </blockquote>
         <br>
         </figure>
+        <div class="row align-items-center">
           <form name="searchform" class="row row-cols-sm align-items-center" method="post" onSubmit = 'return validate()'>
             <div class="col-sm-4">
                 <div class="input-group">
-                <button class="btn btn-outline-secondary" type="button" onclick="document.forms.searchform.submit();" id="button-addon1">search</button>
+                <button class="btn btn-outline-secondary" type="button" onclick="document.forms.searchform.submit();" id="button-addon1"  name="action" value="text">search</button>
                 <input name="text" type="text" class="form-control" id="pos1" maxlength="1" onkeyup="jump(this, 'pos1')">
                 <input name="text" type="text" class="form-control" id="pos2" maxlength="1" onkeyup="jump(this, 'pos2')">
                 <input name="text" type="text" class="form-control" id="pos3" maxlength="1" onkeyup="jump(this, 'pos3')">
@@ -22,9 +23,22 @@
                 <input name="text" type="text" class="form-control" id="pos6" maxlength="1" onkeyup="jump(this, 'pos5')">
                 </div>
             </div>
+          </div>
+          <div class="row align-items-center">
             <div class="col-sm-4">
             <input name="exclude" type="text" class="form-control" id="exclude" placeholder="exclude letters here">
-            </div>
+          </div>  
+          </div>
             </form>
-            </div>
+            <br>
+            <div class="row align-items-center">
+            <div class="col-sm-4">
+            <form name="containform" class="row row-cols-sm align-items-center" method="post" action=""> 
+            <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary" type="button" onclick="document.forms.containform.submit();" id="button-addon1" name="action" value="contains">search</button>
+            <input name="contains" type="text" class="form-control" id="contains" placeholder="words containing letters here">
+          </form>
+          </div>
+          </div>
+          </div>
 {% endblock %}

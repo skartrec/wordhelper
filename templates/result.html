@@ -11,7 +11,7 @@
             <a href="{{url_for('index')}}"button type="button" class="btn btn-primary">Search again</button></a>
         <br>
         </figure>
-            {% for items in result %}
+            {% for items in excluded_words %}
             <h1>
             <li>{{items}}</li>
             </h1>
