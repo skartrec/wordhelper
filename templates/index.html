@@ -14,18 +14,17 @@
             <div class="col-sm-4">
                 <div class="input-group">
                 <button class="btn btn-outline-secondary" type="button" onclick="document.forms.searchform.submit();" id="button-addon1">search</button>
-                <input name="text1" type="text" class="form-control" id="pos1" maxlength="1" onkeyup="jump(this, 'pos1')">
-                <input name="text2" type="text" class="form-control" id="pos2" maxlength="1" onkeyup="jump(this, 'pos2')">
-                <input name="text3" type="text" class="form-control" id="pos3" maxlength="1" onkeyup="jump(this, 'pos3')">
-                <input name="text4" type="text" class="form-control" id="pos4" maxlength="1" onkeyup="jump(this, 'pos3')">
-                <input name="text5" type="text" class="form-control" id="pos5" maxlength="1" onkeyup="jump(this, 'pos4')">
-                <input name="text6" type="text" class="form-control" id="pos6" maxlength="1" onkeyup="jump(this, 'pos5')">
+                <input name="text" type="text" class="form-control" id="pos1" maxlength="1" onkeyup="jump(this, 'pos1')">
+                <input name="text" type="text" class="form-control" id="pos2" maxlength="1" onkeyup="jump(this, 'pos2')">
+                <input name="text" type="text" class="form-control" id="pos3" maxlength="1" onkeyup="jump(this, 'pos3')">
+                <input name="text" type="text" class="form-control" id="pos4" maxlength="1" onkeyup="jump(this, 'pos3')">
+                <input name="text" type="text" class="form-control" id="pos5" maxlength="1" onkeyup="jump(this, 'pos4')">
+                <input name="text" type="text" class="form-control" id="pos6" maxlength="1" onkeyup="jump(this, 'pos5')">
                 </div>
             </div>
-            </form>
-            <form name="searchform" class="row row-cols-sm align-items-center" method="post" onSubmit = 'return validate()'>
             <div class="col-sm-4">
             <input name="exclude" type="text" class="form-control" id="exclude" placeholder="exclude letters here">
+            </div>
             </form>
             </div>
 {% endblock %}

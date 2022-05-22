@@ -11,11 +11,11 @@
             <a href="{{url_for('index')}}"button type="button" class="btn btn-primary">Search again</button></a>
         <br>
         </figure>
-            {% for items in new_words %}
+            {% for items in result %}
             <h1>
             <li>{{items}}</li>
             </h1>
             {% endfor %}
-
+        </div>
         </div>
 {% endblock %}
