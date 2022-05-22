@@ -7,12 +7,8 @@ from functions import new_words
 
 app = Flask(__name__,template_folder='templates')
 
-@app.route('/')
-def index():
-    return(render_template('index.html'))
-
 @app.route('/', methods=['GET','POST'])
-def search():
+def index():
     from functions import validate, wordsearch, truncatelist
     if request.method == 'POST':
         form = request.form
