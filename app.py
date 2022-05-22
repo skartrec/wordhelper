@@ -12,6 +12,8 @@ def index():
     from functions import validate, wordsearch, truncatelist
     if request.method == 'POST':
         form = request.form
+        default_value = 'man'
+        exclude = request.form.get('exclude', default_value)
         validate()
         wordsearch()
         truncatelist()
